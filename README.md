@@ -10,6 +10,11 @@ Arduino Shield for ES920LRB (EASEL), Private LoRa module
 ### Ref.
 1. https://ambidata.io/samples/network/lora-2/
 2. https://qiita.com/nbizyc/items/6f2346ffbe005a5345e9
+3. https://github.com/AmbientDataInc/LoRa-rssi-measure
 
 ## PCB
 - Under construction
+
+## Firmware
+- Under construction
+    - Arduino, PlatformIO

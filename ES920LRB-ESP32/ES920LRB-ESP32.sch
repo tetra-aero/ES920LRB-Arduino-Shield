@@ -1,0 +1,41 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP32_32D_module:ESP32-DEVKITC-32D U?
+U 1 1 61962CEA
+P 3600 4500
+F 0 "U?" H 3600 5667 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32D" H 3600 5576 50  0000 C CNN
+F 2 "MODULE_ESP32-DEVKITC-32D" H 3600 4500 50  0001 L BNN
+F 3 "Espressif Systems" H 3600 4500 50  0001 L BNN
+F 4 "4" H 3600 4500 50  0001 L BNN "Field4"
+	1    3600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L teTra:ES920LR2B M?
+U 1 1 61964154
+P 6650 4500
+F 0 "M?" H 6750 5365 50  0000 C CNN
+F 1 "ES920LR2B" H 6750 5274 50  0000 C CNN
+F 2 "" H 6650 4500 50  0001 C CNN
+F 3 "" H 6650 4500 50  0001 C CNN
+	1    6650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4600 4400 4600
+$EndSCHEMATC
