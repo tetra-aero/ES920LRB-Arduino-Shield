@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ES920LRB-Arduino-Shield"
-Date "2021-11-16"
-Rev "1.1"
+Date "2021-11-18"
+Rev "1.2"
 Comp "teTra Aviation Corp."
 Comment1 ""
 Comment2 ""
@@ -576,12 +576,10 @@ Wire Wire Line
 	6550 4000 6550 4900
 Wire Wire Line
 	6550 4900 5650 4900
-Text Label 7600 4900 0    60   ~ 0
-0(Rx)
 Text Label 7600 4600 0    60   ~ 0
+0(Rx)
+Text Label 7600 4900 0    60   ~ 0
 1(Tx)
-Text Label 7600 4300 0    60   ~ 0
-8
 Wire Wire Line
 	7600 4300 7100 4300
 Wire Wire Line
@@ -590,4 +588,6 @@ Connection ~ 6300 4600
 Wire Wire Line
 	6550 4900 7600 4900
 Connection ~ 6550 4900
+Text Label 7600 4300 0    60   ~ 0
+7
 $EndSCHEMATC
