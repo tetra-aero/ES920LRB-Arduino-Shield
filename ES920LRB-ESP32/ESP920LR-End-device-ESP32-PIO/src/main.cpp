@@ -128,6 +128,8 @@ void setMode(int bw, int sf) {
   delay(1000);
 }
 
+int count;
+
 void send2LoRa() {
   char obuf[64], ibuf[64];
   char * buf;
@@ -135,7 +137,9 @@ void send2LoRa() {
 
   //strcpy(obuf, "loc=(");
   //strcat(obuf, "Hello, ES920LR and Arduino\r\n");
-  strcpy(obuf, "Hello, ES920LR and ESP32\r\n");
+  //strcpy(obuf, "Hello, ES920LR and ESP32\r\n");
+  sprintf(obuf, "Hello, ES920LR: %d\r\n", count);
+  count++;
 
   //int i = 0;
   //Serial.print("setMode(bw: ");
@@ -194,6 +198,8 @@ void setup() {
   Serial.println(")");
 
   setMode(Mode[i].bw, Mode[i].sf);
+
+  count = 0;
 }
 
 void loop() {
