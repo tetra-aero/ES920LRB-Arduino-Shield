@@ -91,13 +91,13 @@ void setMode(int bw, int sf) {
   */
 
   Serial.println(F("setMode..., Command"));
-  strcpy(buf, "config\r\n");
-  sendcmd(buf);
-  strcpy(buf, "2\r\n");
+  //strcpy(buf, "config\r\n");
+  //sendcmd(buf);
+  strcpy(buf, "2\r\n");   //1.terminal mode, 2.processor mode
   sendcmd(buf);
   //strcpy(buf, "version\r\n");
   //sendcmd(buf);
-  strcpy(buf, "node 1\r\n");    //1: coordinator, 2: end device(default), 3: router
+  strcpy(buf, "node 1\r\n");    //1.coordinator, 2.end device(default), 3.router
   sendcmd(buf);
   sprintf(buf, "bw %d\r\n", bw);
   sendcmd(buf);
@@ -107,11 +107,19 @@ void setMode(int bw, int sf) {
   //strcpy(buf, "m 0");
   //sendcmd(buf);
   //strcpy(buf, "q 2\r\n");
-  strcpy(buf, "operation 2\r\n");
-  sendcmd(buf);
-  //strcpy(buf, "w\r\n");
-  //strcpy(buf, "save\r\n");
+  //strcpy(buf, "operation 2\r\n");
   //sendcmd(buf);
+  //strcpy(buf, "w\r\n");
+  strcpy(buf, "protocol 1\r\n");    //1.privatelora, 2.privatelora with static routing, 3.fsk
+  sendcmd(buf);
+  strcpy(buf, "channel 1\r\n");   //1~38
+  sendcmd(buf);
+  strcpy(buf, "ownid 1122\r\n");    //my node network address, 0x0000-0xFFFE
+  sendcmd(buf);
+  //strcpy(buf, "dstid 1122\r\n");    //send node network address, 0x0000-0xFFFE
+  //sendcmd(buf);
+  strcpy(buf, "save\r\n");
+  sendcmd(buf);
   strcpy(buf, "start\r\n");
   sendcmd(buf);
 
