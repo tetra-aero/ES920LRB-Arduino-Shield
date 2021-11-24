@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "ES920LRB-ESP32"
 Date "2021-11-24"
-Rev "v1.1"
+Rev "v1.3"
 Comp "teTra Aviation Corp."
 Comment1 ""
 Comment2 ""
@@ -144,7 +144,7 @@ U 1 1 61A0062D
 P 10100 4500
 F 0 "J4" H 9992 3675 50  0000 C CNN
 F 1 "Conn_01x13_Female" H 9992 3766 50  0000 C CNN
-F 2 "" H 10100 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 10100 4500 50  0001 C CNN
 F 3 "~" H 10100 4500 50  0001 C CNN
 	1    10100 4500
 	1    0    0    1   
@@ -155,7 +155,7 @@ U 1 1 61A02003
 P 6450 4500
 F 0 "J3" H 6342 5285 50  0000 C CNN
 F 1 "Conn_01x13_Female" H 6342 5194 50  0000 C CNN
-F 2 "" H 6450 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 6450 4500 50  0001 C CNN
 F 3 "~" H 6450 4500 50  0001 C CNN
 	1    6450 4500
 	-1   0    0    -1  
@@ -359,8 +359,6 @@ Connection ~ 9500 4900
 Wire Wire Line
 	9500 4900 9250 4900
 Wire Wire Line
-	9500 3300 8900 3300
-Wire Wire Line
 	7650 3300 7650 2600
 Wire Wire Line
 	4150 4200 4150 4250
@@ -395,24 +393,24 @@ $EndComp
 $Comp
 L Device:R R5
 U 1 1 61B2AB74
-P 8750 3300
-F 0 "R5" V 8700 3100 50  0000 C CNN
-F 1 "10k" V 8700 3500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8680 3300 50  0001 C CNN
-F 3 "~" H 8750 3300 50  0001 C CNN
-	1    8750 3300
-	0    1    1    0   
+P 5300 3250
+F 0 "R5" V 5250 3050 50  0000 C CNN
+F 1 "10k" V 5250 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5230 3250 50  0001 C CNN
+F 3 "~" H 5300 3250 50  0001 C CNN
+	1    5300 3250
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 61B2B90E
-P 8750 3400
-F 0 "R6" V 8700 3200 50  0000 C CNN
-F 1 "10k" V 8700 3600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8680 3400 50  0001 C CNN
-F 3 "~" H 8750 3400 50  0001 C CNN
-	1    8750 3400
-	0    1    1    0   
+P 5000 3250
+F 0 "R6" V 4950 3050 50  0000 C CNN
+F 1 "10k" V 4950 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4930 3250 50  0001 C CNN
+F 3 "~" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R1
@@ -535,12 +533,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 2700 7550 2700
 Wire Wire Line
-	8900 3400 9600 3400
-Wire Wire Line
-	8600 3300 7650 3300
-Wire Wire Line
-	7550 3400 8600 3400
-Wire Wire Line
 	5900 2350 5900 4550
 Wire Wire Line
 	5900 4550 6200 4550
@@ -557,15 +549,9 @@ Wire Wire Line
 Wire Wire Line
 	5000 1900 5000 2050
 Wire Wire Line
-	5000 2600 5000 4200
-Wire Wire Line
 	5000 4200 4150 4200
-Connection ~ 5000 2600
-Wire Wire Line
-	5300 2700 5300 4000
 Wire Wire Line
 	5300 4000 4150 4000
-Connection ~ 5300 2700
 Wire Wire Line
 	5900 4550 5500 4550
 Wire Wire Line
@@ -595,23 +581,81 @@ Wire Wire Line
 $Comp
 L teTra:Logo L1
 U 1 1 61CC2BF5
-P 10850 6900
-F 0 "L1" H 11028 7021 50  0000 L CNN
-F 1 "Logo" H 11028 6930 50  0000 L CNN
-F 2 "teTra:teTra-logo" H 10850 6900 50  0001 C CNN
-F 3 "" H 10850 6900 50  0001 C CNN
-	1    10850 6900
+P 10800 6800
+F 0 "L1" H 10978 6921 50  0000 L CNN
+F 1 "Logo" H 10978 6830 50  0000 L CNN
+F 2 "teTra:teTra-logo" H 10800 6800 50  0001 C CNN
+F 3 "" H 10800 6800 50  0001 C CNN
+	1    10800 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61A0A9D3
+P 9200 6750
+F 0 "H2" H 9300 6796 50  0000 L CNN
+F 1 "MountingHole" H 9300 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9200 6750 50  0001 C CNN
+F 3 "~" H 9200 6750 50  0001 C CNN
+	1    9200 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61A163B5
+P 9950 6750
+F 0 "H3" H 10050 6796 50  0000 L CNN
+F 1 "MountingHole" H 10050 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9950 6750 50  0001 C CNN
+F 3 "~" H 9950 6750 50  0001 C CNN
+	1    9950 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61A1077A
+P 9950 7000
+F 0 "H4" H 10050 7046 50  0000 L CNN
+F 1 "MountingHole" H 10050 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9950 7000 50  0001 C CNN
+F 3 "~" H 9950 7000 50  0001 C CNN
+	1    9950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61A00C12
+P 9200 7000
+F 0 "H1" H 9300 7046 50  0000 L CNN
+F 1 "MountingHole" H 9300 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9200 7000 50  0001 C CNN
+F 3 "~" H 9200 7000 50  0001 C CNN
+	1    9200 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:SYM_Radio_Waves_Small #SYM1
 U 1 1 61CC4447
-P 10450 6800
-F 0 "#SYM1" H 10450 6940 50  0001 C CNN
-F 1 "SYM_Radio_Waves_Small" H 10450 6675 50  0001 C CNN
-F 2 "" H 10450 6625 50  0001 C CNN
-F 3 "~" H 10480 6600 50  0001 C CNN
-	1    10450 6800
+P 10800 7000
+F 0 "#SYM1" H 10800 7140 50  0001 C CNN
+F 1 "SYM_Radio_Waves_Small" H 10800 6875 50  0001 C CNN
+F 2 "" H 10800 6825 50  0001 C CNN
+F 3 "~" H 10830 6800 50  0001 C CNN
+	1    10800 7000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5300 2700 5300 3100
+Connection ~ 5300 2700
+Wire Wire Line
+	5300 3400 5300 4000
+Wire Wire Line
+	5000 3400 5000 4200
+Wire Wire Line
+	5000 3100 5000 2600
+Connection ~ 5000 2600
+Wire Wire Line
+	7650 3300 9500 3300
+Wire Wire Line
+	7550 3400 9600 3400
 $EndSCHEMATC
