@@ -5,7 +5,10 @@ Arduino Shield for ES920LRB (EASEL), Private LoRa module
 - https://easel5.com/documents/files/ES920LRB_BASE%E5%9F%BA%E6%9D%BF%E5%AF%B8%E6%B3%95%E5%9B%B3.pdf
 
 ## Schematic
-- v1.1
+- Arduino UNO
+    - v1.4
+- ESP32 (not shield)
+    - v1.0
 
 ### Ref.
 1. https://ambidata.io/samples/network/lora-2/
@@ -17,4 +20,5 @@ Arduino Shield for ES920LRB (EASEL), Private LoRa module
 
 ## Firmware
 - Under construction
-    - Arduino, PlatformIO
+    - Arduino UNO, PlatformIO
+    - ESP32, PlatformIO
