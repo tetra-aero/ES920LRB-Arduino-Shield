@@ -13,7 +13,7 @@
   (title_block
     (title ES920LRB-Arduino_Uno-Shield)
     (date 2021-11-24)
-    (rev v1.1)
+    (rev v1.6)
     (company "teTra Aviation Corp.")
   )
 
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.75)
@@ -73,9 +73,9 @@
     (grid_origin 110.998 126.365)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_ffffffff)
-      (usegerberextensions false)
-      (usegerberattributes true)
+      (layerselection 0x010f0_ffffffff)
+      (usegerberextensions true)
+      (usegerberattributes false)
       (usegerberadvancedattributes true)
       (creategerberjobfile true)
       (excludeedgelayer true)
@@ -1515,7 +1515,7 @@
     (pad 1 thru_hole circle (at 0 0) (size 4.064 4.064) (drill 3.048) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (gr_text "211124 V1.0\nES920LRB-Arduino_Uno-Shield" (at 115.998 78.865 270) (layer F.SilkS)
+  (gr_text "211124 V1.6\nES920LRB-Arduino_Uno-Shield" (at 115.998 78.865 -90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_line (start 173.355 102.235) (end 173.355 94.615) (angle 90) (layer Dwgs.User) (width 0.15))
@@ -1835,7 +1835,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 619E8F3B) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 619E0DCD) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -2295,7 +2295,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 619E8F38) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 619E0DCA) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

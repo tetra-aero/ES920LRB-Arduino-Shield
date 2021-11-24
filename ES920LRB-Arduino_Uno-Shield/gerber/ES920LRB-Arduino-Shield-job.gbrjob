@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.9-73d0e3b20d~88~ubuntu20.04.1"
     },
-    "CreationDate":  "2021-11-24T18:57:20+09:00"
+    "CreationDate":  "2021-11-24T19:01:58+09:00"
   },
   "GeneralSpecs":
   {
@@ -15,7 +15,7 @@
     {
       "Name": "ES920LRB-Arduino-Shield",
       "GUID": "45533932-304c-4524-922d-41726475696e",
-      "Revision": "v1.1"
+      "Revision": "v1.6"
     },
     "Size":
     {
