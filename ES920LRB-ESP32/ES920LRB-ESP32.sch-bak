@@ -393,24 +393,24 @@ $EndComp
 $Comp
 L Device:R R5
 U 1 1 61B2AB74
-P 5300 3250
-F 0 "R5" V 5250 3050 50  0000 C CNN
-F 1 "10k" V 5250 3450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5230 3250 50  0001 C CNN
-F 3 "~" H 5300 3250 50  0001 C CNN
-	1    5300 3250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 61B2B90E
 P 5000 3250
-F 0 "R6" V 4950 3050 50  0000 C CNN
+F 0 "R5" V 4950 3050 50  0000 C CNN
 F 1 "10k" V 4950 3450 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4930 3250 50  0001 C CNN
 F 3 "~" H 5000 3250 50  0001 C CNN
 	1    5000 3250
-	-1   0    0    1   
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61B2B90E
+P 5300 3250
+F 0 "R6" V 5250 3050 50  0000 C CNN
+F 1 "10k" V 5250 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5230 3250 50  0001 C CNN
+F 3 "~" H 5300 3250 50  0001 C CNN
+	1    5300 3250
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1

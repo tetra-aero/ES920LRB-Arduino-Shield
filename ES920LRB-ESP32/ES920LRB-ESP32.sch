@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ES920LRB-ESP32"
-Date "2021-11-24"
-Rev "v1.3"
+Title "ES920LR2B-ESP32"
+Date "2021-11-25"
+Rev "v1.4"
 Comp "teTra Aviation Corp."
 Comment1 ""
 Comment2 ""

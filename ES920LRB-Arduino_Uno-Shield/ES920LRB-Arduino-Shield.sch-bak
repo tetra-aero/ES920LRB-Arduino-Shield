@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "ES920LRB-Arduino_Uno-Shield"
 Date "2021-11-24"
-Rev "1.5"
+Rev "1.6"
 Comp "teTra Aviation Corp."
 Comment1 ""
 Comment2 ""
@@ -838,10 +838,10 @@ Text Label 9600 5650 0    60   ~ 0
 Text Label 9600 6450 0    60   ~ 0
 3(**)
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP5
 U 1 1 623232ED
 P 8900 5650
-F 0 "JP?" H 8900 5855 50  0000 C CNN
+F 0 "JP5" H 8900 5855 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 8900 5764 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8900 5650 50  0001 C CNN
 F 3 "~" H 8900 5650 50  0001 C CNN
@@ -851,10 +851,10 @@ $EndComp
 Text Notes 8800 5800 0    50   ~ 0
 close
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP6
 U 1 1 6232A219
 P 8900 6450
-F 0 "JP?" H 8900 6655 50  0000 C CNN
+F 0 "JP6" H 8900 6655 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 8900 6564 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8900 6450 50  0001 C CNN
 F 3 "~" H 8900 6450 50  0001 C CNN
